@@ -58,14 +58,7 @@
   font-style: normal;
 }
 
-.address__links-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.address__links-list-item {
-  margin-bottom: -1.25px;
+.address__item {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
@@ -118,6 +111,7 @@
 
 .aligned-text {
   display: block;
+  width: 100%;
   line-height: 1;
   letter-spacing: 30px;
 }
@@ -130,13 +124,13 @@
 .aligned-text_center {
   margin-top: 15px;
   margin-right: 5px;
-  margin-left: 37px;
+  margin-left: 15px;
   text-align: center;
 }
 
 .aligned-text_right {
   margin-top: 15px;
-  margin-right: -31px;
+  margin-left: 30px;
   text-align: right;
 }
 
@@ -151,8 +145,6 @@
 
 .cover__description-text {
   margin-top: 2px;
-  margin-left: -49.5px;
-  padding-left: 50px;
   color: #fff;
   font-weight: 400;
   font-size: 22px;
@@ -169,6 +161,7 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -181,6 +174,11 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+}
+.lots__content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
 }
 
 .lots__card-list {
@@ -211,27 +209,21 @@
   justify-content: space-between;
   height: 100%;
   min-height: 596px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -258,13 +250,14 @@
 .lots__look-more-link {
   display: block;
   width: 192px;
-  height: 25px;
-  margin: 29px 0 0 40px;
+  margin-left: 40px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
 }
 
 .about {
@@ -272,7 +265,7 @@
   grid-template-columns: 334px 1fr;
   grid-template-rows: auto auto;
   gap: 23px;
-  padding: 120px 24px 90px;
+  padding: 117px 24px 90px;
 }
 
 .about__logo-column {
@@ -334,6 +327,10 @@
 
 .about__text:first-of-type {
   margin-bottom: 24px;
+}
+
+.about__text + .about__text {
+  margin-top: 0;
 }
 
 .footer {
