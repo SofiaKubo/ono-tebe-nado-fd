@@ -325,12 +325,10 @@
   line-height: 1.2;
 }
 
-.about__text:first-of-type {
+/* Антон, если я теперь правильно поняла твое замечание, то сейчас каждый абзац,
+ кроме последнего, получает одинаковый нижний отступ */
+.about__text:not(:last-child) {
   margin-bottom: 24px;
-}
-
-.about__text + .about__text {
-  margin-top: 0;
 }
 
 .footer {
