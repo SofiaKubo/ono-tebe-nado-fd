@@ -315,6 +315,7 @@
 .about__text-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
 .about__text {
@@ -323,12 +324,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-}
-
-/* Антон, если я теперь правильно поняла твое замечание, то сейчас каждый абзац,
- кроме последнего, получает одинаковый нижний отступ */
-.about__text:not(:last-child) {
-  margin-bottom: 24px;
 }
 
 .footer {
